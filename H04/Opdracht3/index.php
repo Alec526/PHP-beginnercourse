@@ -1,7 +1,8 @@
 <?php
 
-function flipString($s){
-
+function flipString($string){
+    $string = strrev($string);
+    echo $string;
 }
-/* vul getal in tussen de haakjes */
-flipString();
+/* vul zin in tussen de haakjes */
+flipString("ik wil kaas");
