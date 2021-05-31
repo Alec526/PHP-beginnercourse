@@ -12,6 +12,10 @@
             border-collapse: collapse;
             padding: 7px;
         }
+        img {
+            width: 50px;
+            height: 50px;
+        }
     </style>
 </head>
 <body>
@@ -20,10 +24,16 @@
 
 </body>
 <?php
-$array = [25, 32, 11, 23];
+$array = ["De Spartelkuikens", "De Waterbuffels", "Plonsmderin", "Bommetje"];
 
 foreach($array as $zwemclub){
-    echo "<img src='../imgEtc/".$zwemclub."'>";
+
+}
+
+for($i = 0; $i < 25; $i++){
+    if($i % 5 == 0){
+        echo "<img src='../imgEtc/swim.png'>";
+    }
 }
 ?>
 </html>
