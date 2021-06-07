@@ -24,16 +24,25 @@
 
 </body>
 <?php
-$array = ["De Spartelkuikens", "De Waterbuffels", "Plonsmderin", "Bommetje"];
+$array = [
+        "De Spartelkuikens" => 25,
+    "De Waterbuffels" => 32,
+    "Plonsmderin" => 11,
+    "Bommetje" => 23
+];
 
-foreach($array as $zwemclub){
-
+foreach($array as $key => $zwemclub){
+    echo $key . " " . $zwemclub . "<img src='../imgEtc/swim.png'><br>";
 }
 
-for($i = 0; $i < 25; $i++){
+function picNum($zwemclub){
+    return floor($zwemclub / 5);
+}
+
+/*for($i = 0; $i < 25; $i++){
     if($i % 5 == 0){
         echo "<img src='../imgEtc/swim.png'>";
     }
-}
+}*/
 ?>
 </html>
