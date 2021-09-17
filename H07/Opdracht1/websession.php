@@ -26,7 +26,9 @@ if (isset($_POST['knop'])
 }
 
 print_r($_SESSION);
+
 echo "<br>" . "<br>";
+
 foreach ($gebruikers as $gebruiker => $contents) {
     echo $gebruiker . ": ";
     print_r($contents);
