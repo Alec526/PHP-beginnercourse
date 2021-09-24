@@ -46,6 +46,7 @@ foreach ($gebruikers as $gebruiker => $contents) {
     <title>Website</title>
 </head>
 <body>
+
 <h1><?php echo $message ?></h1>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
     <label for="inlognaam">Gebruikersnaam:</label>
@@ -59,5 +60,6 @@ foreach ($gebruikers as $gebruiker => $contents) {
 <a href="gebruiker.php">ga naar website</a> <br>
 <a href="admin.php">ga naar admin website</a> <br>
 <a href="websession.php?logout">log uit</a>
+
 </body>
 </html>
