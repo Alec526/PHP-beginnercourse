@@ -36,6 +36,7 @@ foreach ($gebruikers as $gebruiker => $contents) {
 }
 
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
